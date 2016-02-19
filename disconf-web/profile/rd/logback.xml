@@ -4,8 +4,8 @@
 
     <statusListener class="ch.qos.logback.core.status.NopStatusListener"/>
 
-    <property name="log.base" value="./log/disconf-web"/>
-    <property name="log.monitor" value="./log/monitor"/>
+    <property name="log.base" value="/home/upsmart/work/soft/tomcat/log/disconf/disconf-web"/>
+    <property name="log.monitor" value="/home/upsmart/work/soft/tomcat/log/disconf/monitor"/>
     <property resource="rabbit.properties"/>
 
     <jmxConfigurator/>
