@@ -20,24 +20,24 @@ public class UserCreateTools {
      */
     public static void main(String[] args) {
 
-        ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext();
-        ctx.getEnvironment().setActiveProfiles("production");
-        ctx.setConfigLocation("applicationContext.xml");
-        ctx.refresh();
-
-        userDao = (UserDao) ctx.getBean("userDaoImpl");
+//        ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext();
+//        ctx.getEnvironment().setActiveProfiles("production");
+//        ctx.setConfigLocation("applicationContext.xml");
+//        ctx.refresh();
+//
+//        userDao = (UserDao) ctx.getBean("userDaoImpl");
 
         /**
          * 生成测试用户 SQL
          */
-        UserCreateCommon.generateCreateTestUserSQL(userDao);
+//        UserCreateCommon.generateCreateTestUserSQL(userDao);
 
         /**
          * 生成指定用户 SQL
          */
-        UserCreateCommon.generateCreateSpecifyUserSQL(userDao, "msoa", "msoaSH", RoleEnum.NORMAL, "12");
+        UserCreateCommon.generateCreateSpecifyUserSQL("liangq", "liangq", RoleEnum.READ_ADMIN, "");
 
-        System.exit(1);
+//        System.exit(1);
     }
 
 }

@@ -23,7 +23,7 @@ public class UserCreateCommon {
      * @param userName
      * @param password
      */
-    public static void generateCreateSpecifyUserSQL(UserDao userDao, String userName, String password,
+    public static void generateCreateSpecifyUserSQL(String userName, String password,
                                                     RoleEnum roleEnum, String ownAppIds) {
 
         User user = new User();
