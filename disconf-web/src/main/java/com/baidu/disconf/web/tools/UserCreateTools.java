@@ -35,7 +35,7 @@ public class UserCreateTools {
         /**
          * 生成指定用户 SQL
          */
-        UserCreateCommon.generateCreateSpecifyUserSQL("liangq", "liangq", RoleEnum.READ_ADMIN, "");
+        UserCreateCommon.generateCreateSpecifyUserSQL("apollo", "apollo@disconf", RoleEnum.NORMAL, "");
 
 //        System.exit(1);
     }
